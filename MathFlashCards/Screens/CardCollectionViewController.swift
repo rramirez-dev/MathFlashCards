@@ -44,7 +44,7 @@ class CardCollectionViewController: UICollectionViewController {
     cell.setCard(card)
     cell.mathProblem.factorLabel.text = card.factor
     cell.mathProblem.baseFactorLabel.text = card.baseFactor
-    let operationSymbolImageConfig = UIImage.SymbolConfiguration(pointSize: UIScreen.main.bounds.width * 0.25, weight: .heavy, scale: .large)//0.25
+    let operationSymbolImageConfig = UIImage.SymbolConfiguration(pointSize: UIScreen.main.bounds.width * 0.20, weight: .heavy, scale: .large)
     let operationSymbolImage = UIImage(systemName: Operation.getOperationSFSymbol(operation: card.operation), withConfiguration: operationSymbolImageConfig)
     cell.mathProblem.operationImageView.tintColor = .white
     cell.mathProblem.operationImageView.image = operationSymbolImage
