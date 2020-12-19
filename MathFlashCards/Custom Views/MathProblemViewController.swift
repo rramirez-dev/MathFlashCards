@@ -13,19 +13,16 @@ class MathProblemViewController: UIView {
   var factorLabel = UILabel()
   var operationImageView = UIImageView()
   private var barLabel = UILabel()
-  private var factorsVStack = UIStackView()
   private var operationHStack = UIStackView()
-  private var factorFont = UIFont(name: "ArialRoundedMTBold", size: UIScreen.main.bounds.width * 0.50)//%0.6133333333333333
+  private var factorFont = UIFont(name: "ArialRoundedMTBold", size: UIScreen.main.bounds.width * 0.50)//0.50
   private var barView = UIView()
 
   override init(frame: CGRect) {
     super.init(frame: frame)
-
     configureBarView()
-    configureFactorsVStack()
-    configureFactorLabel()
-    configureBaseFactorLabel()
     configureOperationImageView()
+    configureBaseFactorLabel()
+    configureFactorLabel()
   }
 
   required init?(coder: NSCoder) {
@@ -50,27 +47,8 @@ class MathProblemViewController: UIView {
     ])
   }
 
-  private func configureFactorsVStack() {
-    factorsVStack.alignment = .bottom
-    factorsVStack.axis = .vertical
-    factorsVStack.distribution = .fillProportionally
-    addSubview(factorsVStack)
-    setFactorVStackConstraints()
-  }
-
-  private func setFactorVStackConstraints() {
-    factorsVStack.translatesAutoresizingMaskIntoConstraints = false
-
-    NSLayoutConstraint.activate([
-      factorsVStack.topAnchor.constraint(equalTo: topAnchor, constant: 0),
-      factorsVStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),
-      factorsVStack.bottomAnchor.constraint(equalTo: barView.topAnchor, constant: 0)
-    ])
-  }
-
   private func configureOperationImageView() {
     operationImageView = UIImageView()
-    //operationImageView.backgroundColor = .red
     addSubview(operationImageView)
     setOperationImageViewConstraints()
   }
@@ -80,27 +58,47 @@ class MathProblemViewController: UIView {
 
     NSLayoutConstraint.activate([
       operationImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
-      operationImageView.trailingAnchor.constraint(equalTo: factorsVStack.leadingAnchor, constant: -10),
-      operationImageView.bottomAnchor.constraint(equalTo: barView.topAnchor, constant: -35),
+      operationImageView.bottomAnchor.constraint(equalTo: barView.topAnchor, constant: 0),
       operationImageView.heightAnchor.constraint(equalTo: operationImageView.widthAnchor)
     ])
   }
 
   private func configureFactorLabel() {
     factorLabel.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .vertical)
-    //factorLabel.backgroundColor = .blue
     factorLabel.font = factorFont
     factorLabel.textAlignment = .right
     factorLabel.textColor = .white
-    factorsVStack.addArrangedSubview(factorLabel)
+    addSubview(factorLabel)
+    setFactorLabelConstraints()
+  }
+
+  private func setFactorLabelConstraints() {
+    factorLabel.translatesAutoresizingMaskIntoConstraints = false
+
+    NSLayoutConstraint.activate([
+      factorLabel.topAnchor.constraint(greaterThanOrEqualTo: topAnchor, constant: 10),
+      factorLabel.leadingAnchor.constraint(greaterThanOrEqualTo: leadingAnchor, constant: 10),
+      factorLabel.trailingAnchor.constraint(greaterThanOrEqualTo: trailingAnchor, constant: -10),
+      factorLabel.bottomAnchor.constraint(equalTo: baseFactorLabel.topAnchor, constant: 0)
+    ])
   }
 
   private func configureBaseFactorLabel() {
     baseFactorLabel.setContentHuggingPriority(UILayoutPriority.defaultLow, for: .vertical)
-    //baseFactorLabel.backgroundColor = .green
     baseFactorLabel.font = factorFont
     baseFactorLabel.textAlignment = .right
     baseFactorLabel.textColor = .white
-    factorsVStack.addArrangedSubview(baseFactorLabel)
+    addSubview(baseFactorLabel)
+    setBaseFactorLabelConstraints()
+  }
+
+  private func setBaseFactorLabelConstraints() {
+    baseFactorLabel.translatesAutoresizingMaskIntoConstraints = false
+
+    NSLayoutConstraint.activate([
+      baseFactorLabel.leadingAnchor.constraint(greaterThanOrEqualTo: operationImageView.trailingAnchor, constant: -5),
+      baseFactorLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+      baseFactorLabel.bottomAnchor.constraint(equalTo: barView.topAnchor, constant: 0)
+    ])
   }
 }
