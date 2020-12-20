@@ -14,7 +14,7 @@ class MathProblemViewController: UIView {
   var operationImageView = UIImageView()
   private var barLabel = UILabel()
   private var operationHStack = UIStackView()
-  private var factorFont = UIFont(name: "ArialRoundedMTBold", size: UIScreen.main.bounds.width * 0.50)//0.50
+  private var factorFont = UIFont(name: "ArialRoundedMTBold", size: UIScreen.main.bounds.width * 0.50)
   private var barView = UIView()
 
   override init(frame: CGRect) {
@@ -58,7 +58,7 @@ class MathProblemViewController: UIView {
 
     NSLayoutConstraint.activate([
       operationImageView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
-      operationImageView.bottomAnchor.constraint(equalTo: barView.topAnchor, constant: 0),
+      operationImageView.bottomAnchor.constraint(equalTo: barView.topAnchor, constant: -30),
       operationImageView.heightAnchor.constraint(equalTo: operationImageView.widthAnchor)
     ])
   }
