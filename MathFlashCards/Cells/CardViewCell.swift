@@ -74,8 +74,7 @@ class CardViewCell: UICollectionViewCell {
   }
 
   private func configureCardCounterLabel() {
-    //cardCounterLbl.backgroundColor = .blue
-    cardCounterLbl.font = deckFont?.withSize(UIScreen.main.bounds.width * 0.10)//20
+    cardCounterLbl.font = deckFont?.withSize(UIScreen.main.bounds.width * 0.10)
     cardCounterLbl.textColor = .white
     frontCard.addSubview(cardCounterLbl)
     setCardCounterLabelConstraints()
@@ -110,7 +109,6 @@ class CardViewCell: UICollectionViewCell {
   }
 
   private func configureMathProblem() {
-    //mathProblem.backgroundColor = .black
     mathProblem.backgroundColor = .clear
     mathProblem.setContentCompressionResistancePriority(UILayoutPriority.defaultLow, for: .vertical)
     frontCard.addSubview(mathProblem)
@@ -124,7 +122,7 @@ class CardViewCell: UICollectionViewCell {
     NSLayoutConstraint.activate([
       mathProblem.leadingAnchor.constraint(equalTo: frontCard.leadingAnchor, constant: 10),
       mathProblem.trailingAnchor.constraint(equalTo: frontCard.trailingAnchor, constant: -10),
-      mathProblem.bottomAnchor.constraint(equalTo: cardCounterLbl.topAnchor, constant: -15),
+      mathProblem.bottomAnchor.constraint(equalTo: cardCounterLbl.topAnchor, constant: -5),
       mathProblem.centerXAnchor.constraint(equalTo: frontCard.centerXAnchor, constant: 0),
       mathProblem.centerYAnchor.constraint(equalTo: frontCard.centerYAnchor, constant: 0)
     ])
@@ -133,7 +131,6 @@ class CardViewCell: UICollectionViewCell {
   private func configureFrontCard() {
     let tapFrontCard = UITapGestureRecognizer(target: self, action: #selector(flipFrontCard))
     frontCard.addGestureRecognizer(tapFrontCard)
-    //frontCard.backgroundColor = .red
     frontCard.backgroundColor = UIColor.darkModeBackgroundColor
     contentView.addSubview(frontCard)
     setFrontCardConstraints()
