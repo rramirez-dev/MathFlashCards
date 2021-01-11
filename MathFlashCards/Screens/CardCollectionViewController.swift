@@ -65,7 +65,7 @@ class CardCollectionViewController: UICollectionViewController {
 
   private func configureDoneBarBtn() {
     if testModeEnabled {
-      navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(calculateScore))
+      navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(calculateScore))
     }
   }
 
