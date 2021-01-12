@@ -195,9 +195,6 @@ class ScoreViewController: UIViewController {
 
   // MARK: Action Methods
   @objc private func startOver() {
-    let deckSelectorVC = CardDeckSelectorViewController()
-    deckSelectorVC.modalTransitionStyle = .crossDissolve
-    deckSelectorVC.modalPresentationStyle = .fullScreen
     navigationController?.popToRootViewController(animated: true)
   }
 }
