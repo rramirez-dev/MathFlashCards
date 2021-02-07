@@ -20,6 +20,7 @@ class CardCollectionViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    collectionView.backgroundColor = UIColor.darkModeBackgroundColor
     collectionView.isPagingEnabled = true
     collectionView.delegate = self
     collectionView.register(CardViewCell.self, forCellWithReuseIdentifier: CardViewCell.reuseIdentifier)
