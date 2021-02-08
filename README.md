@@ -1,5 +1,5 @@
 # Math Flash Cards
-Improve your basic math skils with the Math Flash Cards.
+Improve your basic math skils with Math Flash Cards.
 ## Features
 * Select the math operation to review or quiz
 * Shuffle Decks
