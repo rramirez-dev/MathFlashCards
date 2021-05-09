@@ -8,7 +8,7 @@ Improve your basic math skils with Math Flash Cards.
 * Toggle between test and review modes
 
 ![Operation Selector](/images/OperationSelector.jpg)
-![Review Mode Deck Selector](/images/ReviewModeDeckSelector.jpg)
-![Front Card](/images/FrontCardTestMode.jpg)
-![Back Card Test Mode](/images/BackCardTestMode.jpg)
-![Score Screen](/images/ScoreScreen.jpg)
+![Review Mode Deck Selector](/images/ReviewModeDeckSelector.png)
+![Front Card](/images/FrontCardTestMode.png)
+![Back Card Test Mode](/images/BackCardTestMode.png)
+![Score Screen](/images/ScoreScreen.png)
