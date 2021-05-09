@@ -7,7 +7,7 @@ Improve your basic math skils with Math Flash Cards.
 * Select individual decks to review or be tested on
 * Toggle between test and review modes
 
-![Operation Selector](/images/OperationSelector.jpg)
+![Operation Selector](/images/OperationSelector.png)
 ![Review Mode Deck Selector](/images/ReviewModeDeckSelector.png)
 ![Front Card](/images/FrontCardTestMode.png)
 ![Back Card Test Mode](/images/BackCardTestMode.png)
