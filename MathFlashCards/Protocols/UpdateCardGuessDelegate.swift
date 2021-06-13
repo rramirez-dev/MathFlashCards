@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol UpdateCardGuessDelegate: class {
+protocol UpdateCardGuessDelegate: AnyObject {
   func setYouGuessedCorrectly(guessWasCorrect: Bool, indexPath: IndexPath)
 }

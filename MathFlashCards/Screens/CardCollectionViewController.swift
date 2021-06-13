@@ -11,7 +11,7 @@ import UIKit
 class CardCollectionViewController: UICollectionViewController {
   var testModeEnabled = false
   var cards = [Card]()
-  //swiftlint:disable implicitly_unwrapped_optional
+  // swiftlint:disable implicitly_unwrapped_optional
   private var card: Card!
 
   private let itemsPerRow: CGFloat = 1

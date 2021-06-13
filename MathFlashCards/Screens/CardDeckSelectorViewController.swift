@@ -26,9 +26,9 @@ class CardDeckSelectorViewController: UIViewController {
   private let btnCornerRadius: CGFloat = 15.0
   private let btnBorderWidth: CGFloat = 2.0
   private let borderColor = UIColor.white
-  private let operationBtnSymbolPointSize: CGFloat = 130.0
   private let operatonsVStackGridSpacing: CGFloat = 10
   private let operationsBtnsHStackSpacing: CGFloat = 10
+  private let operationBtnImageConfig = UIImage.SymbolConfiguration(pointSize: 130.0, weight: .light, scale: .default)
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -133,8 +133,7 @@ class CardDeckSelectorViewController: UIViewController {
     additionBtn.layer.cornerRadius = btnCornerRadius
     additionBtn.layer.borderWidth = btnBorderWidth
     additionBtn.layer.borderColor = borderColor.cgColor
-    let plusSymbolImageConfig = UIImage.SymbolConfiguration(pointSize: operationBtnSymbolPointSize, weight: .light, scale: .default)
-    let plusSymbolImage = UIImage(systemName: OperationSFSymbol.additon.rawValue, withConfiguration: plusSymbolImageConfig)
+    let plusSymbolImage = UIImage(systemName: OperationSFSymbol.additon.rawValue, withConfiguration: operationBtnImageConfig)
     additionBtn.tintColor = .white
     additionBtn.setImage(plusSymbolImage, for: .normal)
     additionBtn.addTarget(self, action: #selector(selectOperationBtn), for: .touchUpInside)
@@ -158,8 +157,7 @@ class CardDeckSelectorViewController: UIViewController {
     multiplicationBtn.layer.cornerRadius = btnCornerRadius
     multiplicationBtn.layer.borderWidth = btnBorderWidth
     multiplicationBtn.layer.borderColor = borderColor.cgColor
-    let multiplicationSymbolImageConfig = UIImage.SymbolConfiguration(pointSize: operationBtnSymbolPointSize, weight: .light, scale: .default)
-    let multiplicationSymbolImage = UIImage(systemName: OperationSFSymbol.multiplication.rawValue, withConfiguration: multiplicationSymbolImageConfig)
+    let multiplicationSymbolImage = UIImage(systemName: OperationSFSymbol.multiplication.rawValue, withConfiguration: operationBtnImageConfig)
     multiplicationBtn.setImage(multiplicationSymbolImage, for: .normal)
     multiplicationBtn.tintColor = .white
     multiplicationBtn.addTarget(self, action: #selector(selectOperationBtn), for: .touchUpInside)
@@ -183,8 +181,7 @@ class CardDeckSelectorViewController: UIViewController {
     divisionBtn.layer.cornerRadius = btnCornerRadius
     divisionBtn.layer.borderWidth = btnBorderWidth
     divisionBtn.layer.borderColor = borderColor.cgColor
-    let divisionSymbolImageConfig = UIImage.SymbolConfiguration(pointSize: operationBtnSymbolPointSize, weight: .light, scale: .default)
-    let divisionSymbolImage = UIImage(systemName: OperationSFSymbol.division.rawValue, withConfiguration: divisionSymbolImageConfig)
+    let divisionSymbolImage = UIImage(systemName: OperationSFSymbol.division.rawValue, withConfiguration: operationBtnImageConfig)
     divisionBtn.setImage(divisionSymbolImage, for: .normal)
     divisionBtn.tintColor = .white
     divisionBtn.addTarget(self, action: #selector(selectOperationBtn), for: .touchUpInside)
@@ -209,8 +206,7 @@ class CardDeckSelectorViewController: UIViewController {
     subtractionBtn.layer.cornerRadius = btnCornerRadius
     subtractionBtn.layer.borderWidth = btnBorderWidth
     subtractionBtn.layer.borderColor = borderColor.cgColor
-    let subtractionSymbolImageConfig = UIImage.SymbolConfiguration(pointSize: operationBtnSymbolPointSize, weight: .light, scale: .default)
-    let subtractionSymbolImage = UIImage(systemName: OperationSFSymbol.subtraction.rawValue, withConfiguration: subtractionSymbolImageConfig)
+    let subtractionSymbolImage = UIImage(systemName: OperationSFSymbol.subtraction.rawValue, withConfiguration: operationBtnImageConfig)
     subtractionBtn.setImage(subtractionSymbolImage, for: .normal)
     subtractionBtn.imageView?.contentMode = .scaleAspectFill
     subtractionBtn.tintColor = .white

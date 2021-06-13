@@ -35,7 +35,6 @@ class DeckListCell: UITableViewCell {
     let shuffleSelectedImage = UIImage(systemName: "shuffle", withConfiguration: symbolConfig)?.withTintColor(UIColor.green, renderingMode: .alwaysOriginal)
     shuffleBtn.setImage(shuffleUnselectedImage, for: .normal)
     shuffleBtn.setImage(shuffleSelectedImage, for: .selected)
-    //shuffleBtn.backgroundColor = .black
     shuffleBtn.setContentHuggingPriority(UILayoutPriority.init(252), for: .horizontal)
     shuffleBtn.tintColor = .white
     shuffleBtn.addTarget(self, action: #selector(updateDecksToShuffle(sender:)), for: .touchUpInside)
@@ -55,7 +54,6 @@ class DeckListCell: UITableViewCell {
   }
 
   private func configureDeckLabel() {
-    //deckLabel.backgroundColor = .blue
     deckLabel.textColor = .white
     deckLabel.font = deckFont?.withSize(25)
     deckLabel.text = ""

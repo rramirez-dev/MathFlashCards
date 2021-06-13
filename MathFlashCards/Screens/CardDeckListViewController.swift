@@ -93,7 +93,7 @@ class CardDeckListViewController: UIViewController {
     flowlayout.minimumLineSpacing = 0
     let cardVC = CardCollectionViewController(collectionViewLayout: flowlayout)
 
-    //swiftlint:disable force_unwrapping
+    // swiftlint:disable force_unwrapping
     switch  selectedOperation {
     case 1:
       cardSets = decks[Operation.addition]!
@@ -113,7 +113,7 @@ class CardDeckListViewController: UIViewController {
         let factor = factorRange[indexPath.row]
         var cardSet = [Card]()
 
-        //Shuffle decks
+        // Shuffle decks
         if decksToShuffle.contains(factor) {
           cardSet = cardSets[factor]!.shuffled()
           cards.append(contentsOf: cardSet)
@@ -156,7 +156,7 @@ extension CardDeckListViewController: UITableViewDataSource {
     cell.shuffleBtn.isEnabled = false
     cell.tintColor = UIColor.deckListTint
 
-    //Add and Remove decks to be shuffled from decks to shuffle
+    // Add and Remove decks to be shuffled from decks to shuffle
     cell.updateDecksToShuffle = { row in
       if self.decksToShuffle.contains(row) {
         let itemIndex = self.decksToShuffle.firstIndex(of: row)
