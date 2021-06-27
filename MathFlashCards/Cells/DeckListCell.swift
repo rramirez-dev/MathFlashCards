@@ -33,6 +33,7 @@ class DeckListCell: UITableViewCell {
     let symbolConfig = UIImage.SymbolConfiguration(scale: .large)
     let shuffleUnselectedImage = UIImage(systemName: "shuffle", withConfiguration: symbolConfig)
     let shuffleSelectedImage = UIImage(systemName: "shuffle", withConfiguration: symbolConfig)?.withTintColor(UIColor.green, renderingMode: .alwaysOriginal)
+    shuffleBtn.accessibilityLabel = "Shuffle Deck"
     shuffleBtn.setImage(shuffleUnselectedImage, for: .normal)
     shuffleBtn.setImage(shuffleSelectedImage, for: .selected)
     shuffleBtn.setContentHuggingPriority(UILayoutPriority.init(252), for: .horizontal)

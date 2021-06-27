@@ -128,6 +128,7 @@ class CardDeckSelectorViewController: UIViewController {
 
   // MARK: Configure Addition Button
   private func configureAdditionBtn() {
+    additionBtn.accessibilityLabel = "Addition"
     additionBtn.tag = 1
     additionBtn.titleLabel?.font = operationFont
     additionBtn.layer.cornerRadius = btnCornerRadius
@@ -152,6 +153,7 @@ class CardDeckSelectorViewController: UIViewController {
 
   // MARK: Configure Multiplication Button
   private func configureMultiplicationBtn() {
+    multiplicationBtn.accessibilityLabel = "Multiplication"
     multiplicationBtn.tag = 2
     multiplicationBtn.titleLabel?.font = operationFont
     multiplicationBtn.layer.cornerRadius = btnCornerRadius
@@ -176,6 +178,7 @@ class CardDeckSelectorViewController: UIViewController {
 
   // MARK: Configure Division Button
   private func configureDivisionBtn() {
+    divisionBtn.accessibilityLabel = "Division"
     divisionBtn.tag = 3
     divisionBtn.titleLabel?.font = operationFont
     divisionBtn.layer.cornerRadius = btnCornerRadius
@@ -232,6 +235,7 @@ class CardDeckSelectorViewController: UIViewController {
   }
 
   private func configureTestModeSwitch() {
+    testModeSwitch.accessibilityLabel = "Toggle test mode"
     testModeSwitch = UISwitch()
     testModeSwitch.backgroundColor = UIColor.init(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     testModeSwitch.layer.cornerRadius = 16.0

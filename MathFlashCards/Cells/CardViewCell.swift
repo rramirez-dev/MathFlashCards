@@ -188,6 +188,7 @@ class CardViewCell: UICollectionViewCell {
   }
 
   private func configureCorrectBtn() {
+    correctBtn.accessibilityLabel = "Answer was correct"
     correctBtn.tag = 1
     correctBtn.setImage(checkmarkCircle, for: [.normal])
     correctBtn.tintColor = .white
@@ -196,6 +197,7 @@ class CardViewCell: UICollectionViewCell {
   }
 
   private func configureIncorrectBtn() {
+    incorrectBtn.accessibilityLabel = "Answer was incorrect"
     incorrectBtn.tag = 2
     incorrectBtn.setImage(xCircle, for: .normal)
     incorrectBtn.tintColor = .white
