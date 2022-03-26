@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: deckFont.withSize(25)]
     }
     appearance.backgroundColor = UIColor.darkModeBackgroundColor
-    UINavigationBar.appearance().standardAppearance = appearance
+    UINavigationBar.appearance().scrollEdgeAppearance = appearance
     cardNC.addChild(cardDeckSelectorVC)
     window?.rootViewController = cardNC
     window?.makeKeyAndVisible()
