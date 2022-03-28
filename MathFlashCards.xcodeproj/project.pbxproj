@@ -22,6 +22,7 @@
 		7FE2EC4B24C10D0600274DFF /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE2EC4A24C10D0600274DFF /* AlertViewController.swift */; };
 		7FE6202322657B8D007C01CA /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE6202222657B8D007C01CA /* Card.swift */; };
 		7FE90C99245E7C8400EB03F2 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE90C98245E7C8400EB03F2 /* Fonts.swift */; };
+		7FEBC3C527F26AEE008BC477 /* OperationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEBC3C427F26AEE008BC477 /* OperationButton.swift */; };
 		7FF3829724AD41B40053906C /* CardDeckSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF3829624AD41B40053906C /* CardDeckSelectorViewController.swift */; };
 		7FF60331248587B70025E60D /* CardGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF60330248587B70025E60D /* CardGenerator.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		7FE2EC4A24C10D0600274DFF /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		7FE6202222657B8D007C01CA /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		7FE90C98245E7C8400EB03F2 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		7FEBC3C427F26AEE008BC477 /* OperationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationButton.swift; sourceTree = "<group>"; };
 		7FF3829624AD41B40053906C /* CardDeckSelectorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDeckSelectorViewController.swift; sourceTree = "<group>"; };
 		7FF60330248587B70025E60D /* CardGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				7FBE6FAA24CF7F88006E0E4E /* MathProblemViewController.swift */,
+				7FEBC3C427F26AEE008BC477 /* OperationButton.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				7F100595248BE50200B3A025 /* UpdateCardGuessDelegate.swift in Sources */,
 				7FCD3A12219F7B7500635941 /* CardDeckListViewController.swift in Sources */,
 				7FBE6FAB24CF7F88006E0E4E /* MathProblemViewController.swift in Sources */,
+				7FEBC3C527F26AEE008BC477 /* OperationButton.swift in Sources */,
 				7FE90C99245E7C8400EB03F2 /* Fonts.swift in Sources */,
 				7F83B00E219B801F0058ACA0 /* AppDelegate.swift in Sources */,
 			);
@@ -421,7 +425,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ5KPDJ22P;
 				INFOPLIST_FILE = MathFlashCards/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZ5KPDJ22P;
 				INFOPLIST_FILE = MathFlashCards/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
