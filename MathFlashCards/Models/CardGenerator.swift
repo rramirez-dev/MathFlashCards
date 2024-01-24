@@ -75,3 +75,4 @@ public enum CardGenerator {
     return cardSets
   }
 }
+// swiftlint:enable force_cast

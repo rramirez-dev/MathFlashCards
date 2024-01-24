@@ -214,3 +214,4 @@ extension CardDeckListViewController: UITableViewDelegate {
     factorRange.insert(itemToMove, at: destinationIndexPath.row)
   }
 }
+// swiftlint:enable force_unwrapping

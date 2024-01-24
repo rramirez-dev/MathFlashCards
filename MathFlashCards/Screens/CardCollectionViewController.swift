@@ -17,6 +17,8 @@ class CardCollectionViewController: UICollectionViewController {
   private let itemsPerRow: CGFloat = 1
   private let sectionInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
 
+  // swiftlint:enable implicitly_unwrapped_optional
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
